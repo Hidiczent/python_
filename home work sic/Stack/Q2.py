@@ -19,8 +19,8 @@ while True:
                 print("Stack is full already!")
     
             else:
-                d = int(input("Enter the data:"))
-                stack.append(d)
+                data = int(input("Enter the data:"))
+                stack.append(data)
         elif (choice==2):
             if(len(stack)>=1):
                  item = stack.pop()

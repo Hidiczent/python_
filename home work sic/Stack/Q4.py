@@ -35,28 +35,28 @@ while True:
     print("4. Clear stack")
     print("5. Exit the program")
     print("========================")
-    c = int(input("Enter the choice:"))
-    if c in (1, 2, 3, 4, 5):
-        if (c == 5):
+    choice = int(input("Enter the choice:"))
+    if choice in (1, 2, 3, 4, 5):
+        if (choice == 5):
             break
-        if (c == 1):
+        if (choice == 1):
             if len(stack.stack) >= 5:
                 print("Stack is full already!")
     
             else:
                 data = int(input("Enter the data:"))
                 stack.push(data)
-        elif (c == 2):
+        elif (choice == 2):
             data = stack.pop()
             if data is None:
                 print("Stack is empty, can not pop")
             else:
                 print("Pop element is", data)
     
-        elif (c == 3):
+        elif (choice == 3):
             stack.display()
 
-        elif (c == 4):
+        elif (choice == 4):
             stack.clear()
 
         else:

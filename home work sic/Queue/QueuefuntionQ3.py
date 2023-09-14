@@ -1,5 +1,5 @@
 from queue import Queue
-import time
+
 
 # create a queue
 queue = Queue(max=5)
@@ -14,31 +14,29 @@ while True:
     print("4. Clear queue")
     print("5. Exit the program")
     print("========================")
-    c = int(input("Enter the choice:"))
-    if c in (1, 2, 3, 4, 5):
-        if (c == 5):
+    choice = int(input("Enter the choice:"))
+    if choice in (1, 2, 3, 4, 5):
+        if (choice == 5):
             break
-        if (c==1):
+        if (choice==1):
             if(queue.full()):
                 print("Queue is full already!")
-                time.sleep(3)
             else:
-                d = int(input("Enter the data:"))
-                queue.put(d)
-        elif (c==2):
+                data = int(input("Enter the data:"))
+                queue.put(data)
+        elif (choice==2):
             if(not queue.empty()):
                 ("Dequeued element is",queue.get())
-                time.sleep(3)
             else:
                 print("Queue is empty, can not dequeue")
-        elif (c==3):
+        elif (choice==3):
             print("Queue =",list(queue.queue))
-            time.sleep(3)
-        elif (c==4):
+        
+        elif (choice==4):
             while not queue.empty():
                 queue.get()
             print("Queue cleared")
-            time.sleep(3)
+        
     else:
         print("Invalid Choice, please try again")
-        time.sleep(3)
+    

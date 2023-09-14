@@ -35,26 +35,26 @@ while True:
     print("4. Clear queue")
     print("5. Exit the program")
     print("========================")
-    c = int(input("Enter the choice:"))
-    if c in (1, 2, 3, 4, 5):
-        if (c == 5):
+    choice = int(input("Enter the choice:"))
+    if choice in (1, 2, 3, 4, 5):
+        if (choice == 5):
             break
-        if (c == 1):
+        if (choice == 1):
             if len(queue.queue) >= 5:
                 print("Queue is full already!")
             else:
                 data = int(input("Enter the data:"))
                 queue.enqueue(data)
-        elif (c == 2):
+        elif (choice == 2):
             data = queue.dequeue()
             if data is None:
                 print("Queue is empty, can not dequeue")
             else:
                 print("Dequeued element is", data)
 
-        elif (c == 3):
+        elif (choice == 3):
             queue.display()
-        elif (c == 4):
+        elif (choice == 4):
             queue.clear()
         else:
             print("Invalid Choice, please try again")
