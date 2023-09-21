@@ -1,0 +1,11 @@
+Quiz. #2 
+    If maximum = 100  and number = 25 in the ' guessing number ' game, then how many counts ?
+
+Answer is : 
+    around 2 times
+        
+Output after runcode:        
+    Enter the number of maximum : 100
+    Enter your guessing number : 25
+    Your number is 25.
+    Total  2 times are searched.

@@ -1,0 +1,5 @@
+Quiz. #2 
+    How many comparisons should be done for the find_two() that was implementd in quiz #1 ?
+
+Answer is : 
+    Should be two comparisons (maximum and minimum)
